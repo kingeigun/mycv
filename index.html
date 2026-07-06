@@ -4,7 +4,7 @@
   (function () {
     const hasVisited = sessionStorage.getItem('lang-redirect');
     if (hasVisited) return;
-    sessionStorage.setItem('lang-redirect', '1');
+    sessionStorage.setItem('lang-redirect', '1'); 
 
     const lang = navigator.language || navigator.languages?.[0] || 'zh';
     if (lang.toLowerCase().startsWith('en')) {
